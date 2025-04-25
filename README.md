@@ -1,7 +1,7 @@
 # 🧠 LLMOps Roadmap (GenAI Deployment Mastery) – By Afsar Ahamed
 
 ## 🎯 Goal  
-Master end-to-end workflows for fine-tuning, deploying, and maintaining Large Language Models (LLMs) in production — including Retrieval-Augmented Generation (RAG), vector search, and prompt engineering.
+Master end-to-end workflows for fine-tuning, deploying, evaluating, and maintaining Large Language Models (LLMs) in production — including Retrieval-Augmented Generation (RAG), vector search, prompt engineering, and system observability.
 
 ---
 
@@ -87,6 +87,27 @@ Add guardrails and token monitoring to an LLM-powered customer support bot
 
 ---
 
+## 📍 Phase 6: PromptOps & RAG Evaluation
+
+**🎯 Goal**  
+Ensure the quality, factuality, speed, and cost-efficiency of LLM-generated outputs, especially in RAG pipelines.
+
+**📏 Metrics**
+- Answer Relevance
+- Groundedness / Factuality
+- Hallucination Rate
+- Latency and Token Cost
+
+**🔧 Tools**
+- RAGAS – Evaluate RAG performance (faithfulness, context usage, completeness)
+- Langfuse, PromptLayer – Trace prompts, track token usage, visualize flows
+- LLM-as-a-Judge – Use GPT/Claude to auto-grade responses
+
+**📦 Project Idea:**  
+Build a document Q&A system with Langfuse and RAGAS evaluation + token cost tracking per query
+
+---
+
 ## 🧰 LLMOps Tool Stack Summary
 
 | Category            | Tools                                                   |
@@ -97,7 +118,7 @@ Add guardrails and token monitoring to an LLM-powered customer support bot
 | Embeddings          | e5, InstructorXL, OpenAI, Cohere                         |
 | Vector DBs          | FAISS, Pinecone, Weaviate, ChromaDB                      |
 | Monitoring          | Langfuse, Helicone, Phoenix                              |
-| Evaluation          | PromptEval, Ragas                                        |
+| Evaluation          | PromptEval, Ragas, LLM-as-a-judge                        |
 | Fine-tuning         | LoRA, QLoRA, PEFT                                        |
 | Governance          | Guardrails.ai, Rebuff                                    |
 | Deployment Infra    | Docker, GitHub Actions, Terraform (optional)            |
@@ -108,3 +129,4 @@ Add guardrails and token monitoring to an LLM-powered customer support bot
 **Afsar Ahamed** – [LinkedIn](https://www.linkedin.com) | [GitHub](https://github.com)
 
 Feel free to fork, share, and customize!
+
